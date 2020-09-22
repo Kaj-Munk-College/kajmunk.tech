@@ -1,27 +1,228 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Kaj Munk College Hoofddorp Techniek Website</title>
-		<meta http-equiv="X-UA-Compatible" content="IE=7" />
-		<meta
-			name="description"
-			content="Een Kaj Munk website gemaakt door het techniek team"
-		/>
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<meta
-			name="keywords"
-			content="school, kaj, munk, kajmunk, kajmunkcollege, college, middelbareschool, vwo, havo, mavo, vmbo, techniek, tech"
-		/>
-		<meta name="author" content="Bram Koene" />
-		<meta name="robots" content="index, follow" />
-	</head>
-	<body>
-		<h1>Hoi</h1>
-		<h2>Kaj</h2>
-		<h3>Munk</h3>
-		<h4>Mensen</h4>
-		<p>Welkom op deze site. Nou Joe joe</p>
-	</body>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Kajmunk tech - Het tech team van Kajmunk jaar 2020 - 2021</title>
+    <meta name="description" content="Kajmunk tech - Het tech team van Kajmunk jaar 2020 - 2021"/>
+
+    <!--Google font-->
+    <link href="https://fonts.googleapis.com/css?family=K2D:300,400,500,700,800" rel="stylesheet">
+
+    <!-- Bootstrap CSS / Color Scheme -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        .token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string, .token.variable {
+            color: #696969;
+        }
+        .bg-gradient {
+            background: #1961ac !important;
+        }
+    </style>
+</head>
+<body>
+
+<!--Header Section-->
+<section class="bg-gradient pt-5 pb-6">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex flex-row align-items-center justify-content-between">
+                <div class="heading-brand text-light">Kajmunk.tech</div>
+                <a href="mailto:av@kajmunk.nl" class="btn btn-light" target="_blank">Mail</a>
+            </div>
+        </div>
+        <div class="row mt-6">
+            <div class="col-md-8 mx-auto text-center">
+                <h1 class="text-light">Help mee aan een innovatief Kajmunk</h1>
+                <p class="lead mb-5"></p>
+                <a href="https://github.com/Kaj-Munk-College" class="btn btn-success svg-icon">
+                    <em class="mr-2" data-feather="github"></em>
+                    Doe mee
+                </a>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-9 mx-auto">
+                <div class="code-window">
+                    <div class="dots">
+                        <div class="red"></div>
+                        <div class="orange"></div>
+                        <div class="green"></div>
+                    </div>
+                    <pre class="language-javascript line-numbers"><code class="language-javascript">import { Schools } from '@overheid/open-data';
+import { jij, Emoties, Activiteiten } from '@personen/jij';
+
+if(jij.school == Schools.kajmunk && jij.zinInUitdaging == true) {
+    jij.emailService.stuurEmail(
+        naar: "av@kajmunk.nl",
+        onderwerp: `Aanmelding ${jij.voorNaam} ${jij.achterNaam}`,
+        inhoud: "Hoi ik wil me aanmelden ok tnx bye"
+    ).then((nieuweJij) {
+        nieuweJij.zetEmotie(Emoties.blij);
+        nieuweJij.doe(Activiteiten.wachten);
+    });
+} </code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Features Section-->
+<section class="py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <h2 class="text-center text-md-left">Laatste <span class="text-success">Kajmunk.tech</span> projecten</h2>
+                <div class="row feature-grid">
+                    <a href="http://lentefeest.ga" target="_blank" rel="noopener noreferrer">
+                        <div class="col-sm-6">
+                            <div class="media">
+                                <div class="icon-box">
+                                    <div class="icon-box-inner">
+                                        <span data-feather="feather" width="28" height="28"></span>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    Lentefeest.ga
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="http://kajmunk.tk" target="_blank" rel="noopener noreferrer">
+                        <div class="col-sm-6">
+                            <div class="media">
+                                <div class="icon-box">
+                                    <div class="icon-box-inner">
+                                        <span data-feather="command" width="28" height="28"></span>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    Kajmunk.tk
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="http://github.com/netlob/livescript2" target="_blank" rel="noopener noreferrer">
+                        <div class="col-sm-6">
+                            <div class="media">
+                                <div class="icon-box">
+                                    <div class="icon-box-inner">
+                                        <span data-feather="file-minus" width="28" height="28"></span>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    Livescript
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- <div class="col-sm-6">
+                        <div class="media">
+                            <div class="icon-box">
+                                <div class="icon-box-inner">
+                                    <span data-feather="check-circle" width="28" height="28"></span>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                Geen
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="media">
+                            <div class="icon-box">
+                                <div class="icon-box-inner">
+                                    <span data-feather="command" width="28" height="28"></span>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                Flauw
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="media">
+                            <div class="icon-box">
+                                <div class="icon-box-inner">
+                                    <span data-feather="zap" width="28" height="28"></span>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                Waarom
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="media">
+                            <div class="icon-box">
+                                <div class="icon-box-inner">
+                                    <span data-feather="git-pull-request" width="28" height="28"></span>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                Je
+                            </div>
+                        </div>
+                    </div><div class="col-sm-6">
+                        <div class="media">
+                            <div class="icon-box">
+                                <div class="icon-box-inner">
+                                    <span data-feather="droplet" width="28" height="28"></span>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                Zou
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Used By Section-->
+<section class="pb-6">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <h2 class="text-center text-md-left">Het team</h2>
+                <p class="lead text-muted">Het huidige team bestaat uit</p>
+                <div class="mt-5 d-flex flex-row justify-content-md-start flex-wrap press-icons">
+                    <a href="https://bramkoene.nl" target="blank" class="mx-5"><img height="60" src="https://avatars2.githubusercontent.com/u/27739548?s=60&v=4" alt="Bram" title="Bram"/></a> 
+                    <a href="https://netlob.dev" target="blank" class="mx-5"><img height="60" src="https://avatars1.githubusercontent.com/u/33723199?s=60&v=4" alt="Sjoerd" title="Sjoerd"/></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--footer-->
+<footer class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">GitHub</a></li>
+                    <li class="list-inline-item"><a href="https://kajmunk.nl">Kajmunk.nl</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-md-4 mx-auto text-muted text-center small-xl">
+                &copy; 2020 Kajmunk.tech - All Rights Reserved
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.3/feather.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
 </html>
